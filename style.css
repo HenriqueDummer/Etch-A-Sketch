@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(26, 26, 34);
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-block: 50px;
+    font-size: 50px;
+}
+
+.main_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controls h2{
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.controls div{
+    margin-block: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.controls label{
+    font-size: 23px;
+}
+
+#screen{
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    display: grid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+input{
+    margin-left: 20px;
+}
+
+#color{
+    border: none;
+    width: 60px;
+    height: 30px;
+}
+
+#color:hover{
+    cursor: pointer;
+}
+
+#rainbow{
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}
+
+#rainbow:hover{
+     cursor: pointer;
+}
+
+#eraser{
+    width: 60px;
+    height: 20px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+
+#eraser:hover{
+    cursor: pointer;
+}
+
+
+

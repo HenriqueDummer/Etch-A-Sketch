@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch A Sketch</title>
+</head>
+<body>
+    <main>
+        <h1>Etch A Sketch</h1>
+        <div class="main_container">
+            <div class="controls">
+                <h2>Control Panel</h2>
+                <div>
+                    <label for="display_pixels">Select number of pixels:</label>
+                    <input type="range" value="16" name="display_pixels" id="display_pixels" min="16" max="100">
+                </div>
+
+                <div>
+                    <label for="color">Select color:</label>
+                    <input type="color" name="color" id="color">
+                </div>
+
+                <div>
+                    <label for="rainbow">Rainbow mode:</label>
+                    <input type="button" name="rainbow" id="rainbow">
+                </div>
+
+                <div>
+                    <label for="eraser">Eraser</label>
+                    <input type="button" name="eraser" id="eraser">
+                </div>
+            </div>
+            <div class="screen">
+                <div id="screen">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
