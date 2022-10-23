@@ -27,26 +27,26 @@ display_pixels.addEventListener("change", () => {
     display_size = display_pixels.value * display_pixels.value;
     screen.style.gridTemplateColumns = `repeat(${display_pixels.value}, 1fr)`;
     screen.style.gridTemplateRows = `repeat(${display_pixels.value}, 1fr)`;
-    console.log(display_size)
+    console.log(display_size);
 
-    
+    renderScreen(display_size);
 })
 
-for(let i = 0; i < display_size ; i++){
-    const sqr = document.createElement("div");
+const renderScreen = (display_size) => {
+    for(let i = 0; i < display_size ; i++){
+        const sqr = document.createElement("div");
+    
+        sqr.classList.add("square");
+        sqr.style.backgroundColor = "white";
+        screen.appendChild(sqr);
+    }
 
-    sqr.classList.add("square");
-    sqr.style.backgroundColor = "white";
-    screen.appendChild(sqr);
-}
+    const square = document.querySelectorAll(".square")
 
-
-
-const square = document.querySelectorAll(".square")
-
-square.forEach(sqr => {
+    square.forEach(sqr => {
     
         sqr.addEventListener("mouseover", () => {
+            console.log("djansdkjansd")
             if(current_color != "rainbow"){
                 event.target.style.backgroundColor = current_color
             } else {
@@ -55,6 +55,10 @@ square.forEach(sqr => {
             }
         })
     })
+}
+    
+
+
 
 
 
